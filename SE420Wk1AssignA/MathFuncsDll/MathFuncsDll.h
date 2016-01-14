@@ -1,11 +1,19 @@
-// MathFuncsDll.h
+/* MathFuncsDll.h
+	This is the header used by the dll, here is where the main function "looks" for functions called with MathFuncs:: namespace. 
+First if statement tells if this file was imported in the project or used as a dll, then the right dllexport/import is used on it.
+Then it contains all the functions inside the dll without the implementations, that are located in the .cpp file of same name as this.
 
+*/
+
+// bellow is a little macro to define if this file is being acced from outside of this project or from inside it.
+// if it outside, dll is exported, if it inside, it is imported.
 #ifdef MATHFUNCSDLL_EXPORTS
 #define MATHFUNCSDLL_API __declspec(dllexport) 
 #else
 #define MATHFUNCSDLL_API __declspec(dllimport) 
 #endif
 
+// namespace is MathFuncs, required to be a dll
 namespace MathFuncs
 {
 	// This class is exported from the MathFuncsDll.dll
