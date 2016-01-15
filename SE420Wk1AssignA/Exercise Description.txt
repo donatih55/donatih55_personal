@@ -1,0 +1,38 @@
+"Complete the following questions:
+
+Getting Setup:
+
+1) Register for Github  -  https://github.com/ 
+If you have note used Github before - review the tutorials to get started.
+You can use whatever interface you want to Github. 
+The purpose is to serve as the course repository for all your code and give the ability to share this code with the instructor or students. 
+In real-life these could be managers, other developers and testers.
+
+2) Install Visual Studio 2015. This is available through dream spark.  https://www.dreamspark.com/Institution/Access.aspx 
+If you do not have a Dreamspark Account- Contact your instructor for Access.
+The Visual Studio download is an ISO. 
+You use a virtual mounting software  http://www.slysoft.com/en/virtual-clonedrive.html OR you can burn it to a disk and install it (Not recommended)
+
+3) Link Visual Studio to GitHub.
+The setup can be done during installation or download it
+ https://visualstudio.github.com/ 
+
+
+4) Using what we know to complete a tutorial
+Develop the following in C++ from this tutorial 
+Walkthrough: Creating and Using a Dynamic Link Library (C++)
+https://msdn.microsoft.com/en-us/library/ms235636.aspx 
+Name your project SE420Wk1AssignA 
+Comment every line of code and explain what it does.
+Write a paragraph in each file (.h and both CPP files) explaining how the coded in the header and cpp files work together to create the DLL
+Be prepared to explain the code to the class.
+Deliverables: 
+Header File for DLL
+CPP file for DLL
+CPP Driver using the DLL
+Screen Shot of output
+Comments on every line 
+Large paragraph explanations of the code and how the header and cpp files work together at the top of each.
+Be prepared to explain the code to the class.
+Make sure to identify the questions correctly in order to receive full credit.
+Submit code to Dropbox in zip format""
