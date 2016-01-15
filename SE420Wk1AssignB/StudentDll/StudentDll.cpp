@@ -12,7 +12,7 @@ using namespace std;
 
 namespace Student{
 
-	class Student{
+	class  Student_ClassA : public Student_Class{
 
 		private:
 			string firstName;
@@ -21,12 +21,12 @@ namespace Student{
 
 		public:
 
-			Student(){
+			Student_ClassA(){
 				setFirstName((string)"Henrique");
 				setLastName((string)"Donati");
 				setStudentID((string)"55555555");
 			}
-			~Student() {}
+			~Student_ClassA() {}
 
 			virtual void setFirstName(const string firstNameM) {
 				firstName = firstNameM;

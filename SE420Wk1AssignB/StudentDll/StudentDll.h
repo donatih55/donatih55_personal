@@ -1,4 +1,5 @@
 #pragma once
+#pragma warning
 #include<string>
 #ifdef STUDENTDLL_EXPORTS
 #define STUDENTDLL_API __declspec(dllexport) 
@@ -9,19 +10,19 @@
 namespace	Student
 {
 
-	class Student
+	class Student_Class
 	{
 	public:
-		Student() {};
-		~Student() {};
-		virtual void setFirstName(const string firstName) = 0;
-		virtual const string getFirstName() = 0;
+		//Student_Class() {};
+		//~Student_Class() {};
+    	static STUDENTDLL_API void setFirstName(const string) {}
+		static STUDENTDLL_API string getFirstName() {}
 
-		virtual void setLastName(const string lastName) = 0;
-		virtual const string getLastName() = 0;
-
-		virtual void setStudentID(const string StudentID) = 0;
-		virtual const string getStudentID() = 0;
+		static STUDENTDLL_API void setLastName(const string) {}
+		static STUDENTDLL_API string getLastName() {}
+		
+		static STUDENTDLL_API void setStudentID(const string) {}
+		static STUDENTDLL_API string getStudentID() {}
 
 		//static STUDENTDLL_API const char* getFirstName() = 0;
 
