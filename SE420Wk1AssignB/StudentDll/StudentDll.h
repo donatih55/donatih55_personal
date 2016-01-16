@@ -1,5 +1,6 @@
+//so it is only compiled once
 #pragma once
-#pragma warning
+
 #include<string>
 #ifdef STUDENTDLL_EXPORTS
 #define STUDENTDLL_API __declspec(dllexport) 
@@ -12,17 +13,22 @@ namespace	Student
 
 	class Student_Class
 	{
-	public:
-		//Student_Class() {};
-		//~Student_Class() {};
-    	static STUDENTDLL_API void setFirstName(const string) {}
-		static STUDENTDLL_API string getFirstName() {}
+	private:
+		std::string firstName;
+		std::string lastName;
+		std::string studentID;
 
-		static STUDENTDLL_API void setLastName(const string) {}
-		static STUDENTDLL_API string getLastName() {}
+	public:
+		STUDENTDLL_API Student_Class();
+		STUDENTDLL_API ~Student_Class();
+		STUDENTDLL_API void setFirstName(std::string);
+		 STUDENTDLL_API std::string getFirstName();
+
+		STUDENTDLL_API void setLastName(std::string);
+		STUDENTDLL_API std::string getLastName();
 		
-		static STUDENTDLL_API void setStudentID(const string) {}
-		static STUDENTDLL_API string getStudentID() {}
+		 STUDENTDLL_API void setStudentID(std::string);
+		 STUDENTDLL_API std::string getStudentID();
 
 		//static STUDENTDLL_API const char* getFirstName() = 0;
 

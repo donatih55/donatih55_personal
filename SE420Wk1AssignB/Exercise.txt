@@ -1,0 +1,38 @@
+Start a new project called SE420Wk1AssignB 
+
+ Use / Modify the code from Chapter Assignment A to contain the following methods and data items.
+
+Required Class definitions in the header for DLL
+ 
+Private variables:
+First Name (Default is your First Name)
+Last Name (Default is your Last Name)
+Student ID (Default is your Student ID)
+Default variable include your information.
+Public methods stubs :
+
+Methods Required
+Constructor 
+Store and Retrieve First Name
+Store and Retrieve Last Name
+Store and Retrieve Student ID
+Destructor
+Driver to Test Code 
+Constructor
+Output Default Values from DLL
+Store / replace the First Name, Last Name, and Student ID
+Output Updated Values from DLL
+Destructor
+Research using NUnit  - http://nunit.org/. How can this be used instead of your driver OR why can it not be used
+
+Deliverables:
+Header File for DLL
+CPP file for DLL
+CPP Driver using the DLL 
+Screen Shot of output
+Code Contains the complete Methods and Data Items
+Comments are required for ALL lines of Code
+All variables should be in a proper data type
+Develop a document explaining the use and functionality of your program and how Nunit can be used or how it cannot be used to test the DLL code.
+Be Prepare to demonstrate and explain your code
+Make sure to identify the questions correctly in order to receive full credit.

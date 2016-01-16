@@ -3,51 +3,41 @@
 
 #include "stdafx.h"
 
-#include<string>
+
 #include "stdafx.h"
 #include "StudentDll.h"
-#include <stdexcept>
+#include<string>
 
 using namespace std;
 
 namespace Student{
 
-	class  Student_ClassA : public Student_Class{
-
-		private:
-			string firstName;
-			string lastName;
-			string studentID;
-
-		public:
-
-			Student_ClassA(){
+			Student_Class::Student_Class(){
 				setFirstName((string)"Henrique");
 				setLastName((string)"Donati");
 				setStudentID((string)"55555555");
 			}
-			~Student_ClassA() {}
+			Student_Class::~Student_Class() {}
 
-			virtual void setFirstName(const string firstNameM) {
-				firstName = firstNameM;
+			void Student_Class::setFirstName(string firstNameM) {
+				this->firstName = firstNameM;
 			}
-			virtual const string getFirstName() {
-				return firstName;
+			string Student_Class::getFirstName() {
+				return this->firstName;
 			}
 
-			virtual void setLastName(const string lastNameM)
+			void Student_Class::setLastName(string lastNameM)
 			{
-				lastName = lastNameM;
+				this->lastName = lastNameM;
 			}
-			virtual const string getLastName() {
-				return lastName;
+			string Student_Class::getLastName() {
+				return this->lastName;
 			}
 
-			virtual void setStudentID(const string StudentIDM) {
-				studentID = StudentIDM;
+			void Student_Class::setStudentID(string StudentIDM) {
+				this->studentID = StudentIDM;
 			}
-			virtual const char* getStudentID() {
-
+			string Student_Class::getStudentID() {
+				return this->studentID;
 			}
-	};
 }

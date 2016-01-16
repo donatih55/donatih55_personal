@@ -5,6 +5,13 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentDll", "StudentDll\StudentDll.vcxproj", "{51E93929-CC7F-491F-9076-7C542CF08277}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentDriver", "StudentDriver\StudentDriver.vcxproj", "{43111BF5-3936-4FD7-AAF6-53C85C79409E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA0CA4BE-1BC1-48E1-B630-0F47F4102A20}"
+	ProjectSection(SolutionItems) = preProject
+		Exercise.txt = Exercise.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +28,14 @@ Global
 		{51E93929-CC7F-491F-9076-7C542CF08277}.Release|x64.Build.0 = Release|x64
 		{51E93929-CC7F-491F-9076-7C542CF08277}.Release|x86.ActiveCfg = Release|Win32
 		{51E93929-CC7F-491F-9076-7C542CF08277}.Release|x86.Build.0 = Release|Win32
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Debug|x64.ActiveCfg = Debug|x64
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Debug|x64.Build.0 = Debug|x64
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Debug|x86.ActiveCfg = Debug|Win32
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Debug|x86.Build.0 = Debug|Win32
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Release|x64.ActiveCfg = Release|x64
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Release|x64.Build.0 = Release|x64
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Release|x86.ActiveCfg = Release|Win32
+		{43111BF5-3936-4FD7-AAF6-53C85C79409E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
