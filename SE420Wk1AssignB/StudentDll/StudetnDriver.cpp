@@ -24,8 +24,10 @@ int main()
 	// outputs all the new valued variables stored in me
 	cout << "But now I'm " << me->getFirstName() << " " << me->getLastName() << " and my id is "
 		<< me->getStudentID() << endl;
+
 	// deletes the object me just created above
 	delete me;
+
 	// ends the main function by returning 0
 	return 0;
 }
