@@ -127,7 +127,7 @@ namespace WindowsFormsApplication1
         //Update statement
         public void Update()
         {
-            // update query, like the previous method, should be made
+            // update query, like the previous method, information should be passed in the future
             string query = "UPDATE tableinfo SET name='Joe', age='22' WHERE name='John Smith'";
 
             //Open connection
@@ -151,12 +151,16 @@ namespace WindowsFormsApplication1
         //Delete statement
         public void Delete()
         {
+            //query to be passed deliting from db
             string query = "DELETE FROM tableinfo WHERE name='John Smith'";
-
+            // if it can open the connection
             if (this.OpenConnection() == true)
             {
+                //make a new command with the query above
                 MySqlCommand cmd = new MySqlCommand(query, connection);
+                //execute the query
                 cmd.ExecuteNonQuery();
+                //close the connection
                 this.CloseConnection();
             }
         }
@@ -164,9 +168,10 @@ namespace WindowsFormsApplication1
         //Select statement
         public string Select()
         {
+            //query selecting everything from table
             string query = "SELECT * FROM tableinfo";
 
-            //Create a list to store the result
+            //Create a string to store the result
             string list = "";
             
             //Open connection
@@ -177,12 +182,15 @@ namespace WindowsFormsApplication1
                 //Create a data reader and Execute the command
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
-                //Read the data and store them in the list
+                //Read the data and store them in the string called list
                 while (dataReader.Read())
                 {
+                    //item by item adding the info with a simple space in it.
                     list += dataReader["id"] + " ";
                     list += (dataReader["name"] + " ");
                     list+=(dataReader["age"] + " ");
+                    // new line so the second item has some space
+                    list += "\n";
                 }
 
                 //close Data Reader
@@ -191,11 +199,13 @@ namespace WindowsFormsApplication1
                 //close Connection
                 this.CloseConnection();
 
-                //return list to be displayed
+                //return string to be displayed
                 return list;
             }
+            //if the connection was not stablished
             else
             {
+                //retunr empty variable
                 return list;
             }
         }
@@ -203,6 +213,7 @@ namespace WindowsFormsApplication1
         //Count statement
         public int Count()
         {
+            //query that counts how many items are there in the list
             string query = "SELECT Count(*) FROM tableinfo";
             int Count = -1;
 
@@ -218,16 +229,19 @@ namespace WindowsFormsApplication1
                 //close Connection
                 this.CloseConnection();
 
+                //retunr number of items in the table
                 return Count;
             }
+            //if connection doesn't open
             else
             {
+                //return -1;
                 return Count;
             }
         }
     }
   
-
+    //actual program, AKA, MAin
     static class Program
     {
         /// <summary>
@@ -236,9 +250,11 @@ namespace WindowsFormsApplication1
         [STAThread]
         static void Main()
         {
-            
+            //enable visual styles so we can display the form
             Application.EnableVisualStyles();
+            // use TextRenderer class for output, instead of Graphics class
             Application.SetCompatibleTextRenderingDefault(false);
+            //run the code in Form1 to display the message.
             Application.Run(new Form1());
         }
     }

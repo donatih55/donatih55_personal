@@ -26,12 +26,13 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        // called from form1 to initialize and render everything ps auto generated
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // label1 infomration auto generated from what I inputted in the Design
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 56);
@@ -41,7 +42,7 @@
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // Form1 information auto generated when I created the project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -56,7 +57,7 @@
         }
 
         #endregion
-
+        // label created when I placed the label in the form
         private System.Windows.Forms.Label label1;
     }
 }
