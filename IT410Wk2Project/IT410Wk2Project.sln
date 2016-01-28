@@ -7,7 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cipher", "Cipher\Cipher.vcx
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93191046-27F7-4D1A-A24E-9DA6B81E1A74}"
 	ProjectSection(SolutionItems) = preProject
+		Cipher\ciphertext_in.txt = Cipher\ciphertext_in.txt
+		Cipher\ciphertext_out.txt = Cipher\ciphertext_out.txt
 		Exercise.txt = Exercise.txt
+		Cipher\plaintext_in.txt = Cipher\plaintext_in.txt
+		Cipher\plaintext_out.txt = Cipher\plaintext_out.txt
 	EndProjectSection
 EndProject
 Global
