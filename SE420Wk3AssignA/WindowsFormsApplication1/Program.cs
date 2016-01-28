@@ -37,7 +37,7 @@ namespace WindowsFormsApplication1
             server = "localhost";
             database = "connectcsharptomysql";
             uid = "root";
-            password = "73635674Donati";
+            password = "BLAHHHHHHHH";
             // making a string connection, with all the previous data, it is kind of repetitive but that's how the tutorial had it
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
